@@ -1,0 +1,106 @@
+/* INDEX.HTML */
+/* ================================================== */
+/* NAVBAR */
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.navbar__links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .3s all;
+}
+
+.navbar__link:hover {
+    color: #2991D6;
+}
+
+.navbar__contacts {
+    text-align: right;
+}
+
+.navbar__mail-address {
+    font-size: 14px;
+    color: #a8a8a8;
+}
+/* /NAVBAR */
+
+/* NAVBAR MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+    .navbar__links {
+        display: none;
+    }
+}
+/* /NAVBAR MEDIA QUERIES */
+/* ================================================== */
+/* INDEX.HTML */
+
+
+
+/* COMPANY.HTML */
+/* ================================================== */
+/* NAVBAR COMPANY */
+.company .navbar {
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    background: url("../img/jpg/navbar-company.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.company .navbar::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.company .navbar__content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    justify-content: space-between;
+}
+/* /NAVBAR COMPANY*/
+/* ================================================== */
+/* /COMPANY.HTML */
+
+/* lOCATION.HTML */
+/* ================================================== */
+/* NAVBAR LOCATION */
+.location .navbar {
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    color: #000;
+}
+
+.location .navbar__brand-logo-image {
+    filter: invert(1);
+}
+
+.location .navbar__link {
+    color: #000;
+}
+/* /NAVBAR LOCATION */
+/* ================================================== */
+/* /lOCATION.HTML */
